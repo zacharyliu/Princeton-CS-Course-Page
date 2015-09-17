@@ -7,7 +7,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://www.cs.princeton.edu/courses/archive/*"],
+      "matches": ["*://www.cs.princeton.edu/courses/archive/*"],
       "js": ["content.js"]
     }
   ]
