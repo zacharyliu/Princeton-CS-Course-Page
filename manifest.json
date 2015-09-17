@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Princeton Computer Science Semester Alert",
+  "description": "Detects whether you're on the correct course page for the current semester.",
+  "version": "0.0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.cs.princeton.edu/courses/archive/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
