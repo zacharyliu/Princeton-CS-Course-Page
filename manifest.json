@@ -8,7 +8,8 @@
   "content_scripts": [
     {
       "matches": ["*://www.cs.princeton.edu/courses/archive/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["style.css"]
     }
   ]
 }

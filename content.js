@@ -33,6 +33,5 @@ for (var semesterMonth in SEMESTER_MONTHS) {
         elem.style.boxSizing = "border-box";
         elem.style.textAlign = "center";
         document.body.insertBefore(elem, document.body.childNodes[0]);
-        document.body.style.paddingTop = "30px";
     }
 }
