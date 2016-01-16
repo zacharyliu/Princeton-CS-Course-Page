@@ -7,7 +7,11 @@ var now = new Date();
 var monthNum = now.getMonth() + 1;
 for (var semesterMonth in SEMESTER_MONTHS) {
     if (SEMESTER_MONTHS[semesterMonth].indexOf(monthNum) != -1) {
-        var year = ("" + now.getFullYear()).substr(-2);
+        var year = now.getFullYear();
+        if (monthNum === 1) {
+            year--;
+        }
+        year = (year.toString()).substr(-2);
         var expectedSemester = semesterMonth + year;
         var pageSemester = SEMESTER_REGEX.exec(window.location.href)[1];
 
